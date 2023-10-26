@@ -24,7 +24,7 @@ public class Game implements GameInterface{
 	    for (;;) {
 	        boolean playerTurn = false;
 	        System.out.println("TicTacToe - Use 1-9 to set a field!");
-	        makeBoard();
+	        
 
 	        MinMax current = computerPlayer;
 
@@ -80,15 +80,6 @@ public class Game implements GameInterface{
 	        }
 	    }
 	    return true;
-	}
-	
-	private void makeBoard() {
-	    for (int i = 0; i < 3; i++) {
-	        for (int j = 0; j < 3; j++) {
-	            board[i][j] = (char) (i * 3 + j + '1');
-	        }
-	    }
-	    printBoard();
 	}
 
 	
